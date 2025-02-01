@@ -55,4 +55,17 @@ public String reverse(String str)
   }
   return newString;
 }
+  public String noSpaces(String sWord){
+  String newString = new String();
+  for (int i = 0; i < sWord.length(); i += 1){
+    if (sWord.substring(i, i + 1).equals(" ") == false){
+      newString += sWord.substring(i, i + 1);
+    }
+  }
+  return newString;
+}
+public String noCapitals(String sWord){
+  String newString = new String(sWord.toLowerCase());
+  return newString;
+}
 }
