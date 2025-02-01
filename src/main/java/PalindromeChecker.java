@@ -52,7 +52,7 @@ public String noCapitals(String sWord){
 public boolean palindrome(String word)
 {
   String newString = new String();
-  word = noSpaces((noCapitals(word)))
+  word = noSpaces((noCapitals(word)));
   for(int i = word.length(); i > 0; i -= 1){
     newString += (word.substring(i - 1 , i));
   }
