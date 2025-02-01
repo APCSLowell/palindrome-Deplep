@@ -38,10 +38,10 @@ public void tester()
 public boolean palindrome(String word)
 {
   String newString = new String();
-  for(int i = sWord.length(); i > 0; i -= 1){
-    newString += (sWord.substring(i - 1 , i));
+  for(int i = word.length(); i > 0; i -= 1){
+    newString += (word.substring(i - 1 , i));
   }
-  if (newString.equals(sWord)){
+  if (newString.equals(word)){
     return true;
   }
   return false;
@@ -49,8 +49,8 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
   String newString = new String();
-  for(int i = sWord.length(); i > 0; i -= 1){
-    newString += (sWord.substring(i - 1 , i));
+  for(int i = str.length(); i > 0; i -= 1){
+    newString += (str.substring(i - 1 , i));
     
   }
   return newString;
