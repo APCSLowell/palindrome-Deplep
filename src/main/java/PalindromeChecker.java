@@ -35,6 +35,16 @@ public void tester()
     }
   }
 }
+  public String onlyLetters(String sString){
+  String newString = new String();
+  for (int i = 0; i < sString.length(); i += 1){
+    if(Character.isLetter(sString.charAt(i)) == true){
+      newString += sString.substring(i, i + 1);
+    }
+  }
+  return newString;
+}
+
   public String noSpaces(String sWord){
   String newString = new String();
   for (int i = 0; i < sWord.length(); i += 1){
@@ -52,7 +62,7 @@ public String noCapitals(String sWord){
 public boolean palindrome(String word)
 {
   String newString = new String();
-  word = noSpaces((noCapitals(word)));
+  word = noSpaces((noCapitals(onlyLetters(word))));
   for(int i = word.length(); i > 0; i -= 1){
     newString += (word.substring(i - 1 , i));
   }
